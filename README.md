@@ -20,7 +20,8 @@ This has three sections, as follows.
 
 - The `[mountpoints]` section specifies names for mountpoints referred to in
   `slot` sections.  The key of each entry is a "friendly name" of the
-  mountpoint, and the value is the absolute path in the filesystem.
+  mountpoint, and the value is the absolute path in the filesystem.  Ensure this
+  path exists in the filesystem; this script does not currently create it.
 - Each `[slot]` section has heading format `[slot_BOOTNAME]`, where `BOOTNAME`
   is the value of the `rauc.slot` string passed on the kernel command line.
   The key of each entry in these sections is the friendly name of each
